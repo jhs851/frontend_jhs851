@@ -1,7 +1,19 @@
 import type { AppProps } from 'next/app'
 import GlobalStyles from 'styles/GlobalStyles'
+import withDarkMode from 'next-dark-mode'
 
-const App = ({ Component, pageProps }: AppProps) => (
+type P = AppProps & {
+  darkMode: {
+    autoModeActive: boolean
+    autoModeSupported: boolean
+    darkModeActive: boolean
+    switchToAutoMode: () => void
+    switchToDarkMode: () => void
+    switchToLightMode: () => void
+  }
+}
+
+const App = ({ Component, pageProps }: P) => (
   <>
     <GlobalStyles />
 
@@ -9,4 +21,4 @@ const App = ({ Component, pageProps }: AppProps) => (
   </>
 )
 
-export default App
+export default withDarkMode(App)
