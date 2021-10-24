@@ -23,13 +23,13 @@ const RoomNavigator: React.FC<P> = ({ roomName, onToggleAssets }) => {
         </Text>
       }
       headerLeft={
-        <button onClick={goBack}>
+        <button data-testid="back-button" onClick={goBack}>
           <Image src="/icons/back.svg" width={24} height={24} alt="뒤로" />
         </button>
       }
       headerRight={
         <IconsContainer>
-          <UploadIcon onClick={onToggleAssets}>
+          <UploadIcon data-testid="upload-button" onClick={onToggleAssets}>
             <Image
               src="/icons/upload.svg"
               alt="사진 업로드"
