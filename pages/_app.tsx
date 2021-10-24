@@ -6,6 +6,7 @@ import Layout from 'components/Layout'
 import { NextPage } from 'next'
 import { ReactElement } from 'react'
 import 'plugins/moment'
+import { AnimatePresence, AnimateSharedLayout } from 'framer-motion'
 
 export type NextPageWithLayout<P = {}> = NextPage<P> & {
   getLayout?: (page: ReactElement<P>) => ReactElement<P>
@@ -23,12 +24,18 @@ type P = AppProps & {
   }
 }
 
-const App = ({ Component, pageProps, darkMode }: P) => (
+const App = ({ Component, pageProps, darkMode, router }: P) => (
   <ThemeProvider dark={darkMode.darkModeActive}>
     <GlobalStyles />
 
     <Layout>
-      {(Component.getLayout ?? (page => page))(<Component {...pageProps} />)}
+      <AnimateSharedLayout>
+        <AnimatePresence exitBeforeEnter initial={false}>
+          {(Component.getLayout ?? (page => page))(
+            <Component {...pageProps} key={router.route} />,
+          )}
+        </AnimatePresence>
+      </AnimateSharedLayout>
     </Layout>
   </ThemeProvider>
 )
