@@ -5,13 +5,6 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
   padding: 10px 0;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c6 {
   font-family: AppleSDGothicNeo,sans-serif;
   font-size: 16px;
@@ -68,7 +61,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: 0 0 56px;
   -ms-flex: 0 0 56px;
   flex: 0 0 56px;
@@ -138,6 +131,13 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
   align-items: center;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 <div>
   <section
     class="c0"
@@ -148,10 +148,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/1"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -202,10 +208,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/2"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -244,10 +256,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/3"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -286,10 +304,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/4"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -328,10 +352,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/5"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -370,10 +400,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/6"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
@@ -412,10 +448,16 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
       href="/room/7"
     >
       <div
-        class="c2 c3"
-      />
+        class="c2"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
+      >
+        <div
+          class="c3"
+        />
+      </div>
       <div
         class="c4"
+        style="opacity: 0; transform: translateX(-30px) translateZ(0);"
       >
         <div
           class="c5"
