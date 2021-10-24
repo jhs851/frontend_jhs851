@@ -5,6 +5,7 @@ import ThemeProvider from 'contexts/ThemeProvider'
 import Layout from 'components/Layout'
 import { NextPage } from 'next'
 import { ReactElement } from 'react'
+import 'plugins/moment'
 
 export type NextPageWithLayout<P = {}> = NextPage<P> & {
   getLayout?: (page: ReactElement<P>) => ReactElement<P>
