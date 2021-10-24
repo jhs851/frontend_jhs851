@@ -72,7 +72,6 @@ export const CancelButton = styled.button`
   margin-left: -20px;
   z-index: 1030;
   cursor: pointer;
-  transform: scale(1.2);
   ${flexCenter};
 `
 

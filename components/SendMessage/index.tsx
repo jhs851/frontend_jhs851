@@ -5,10 +5,10 @@ import Image from 'components/Image'
 import { useForm } from 'react-hook-form'
 
 type P = {
-  onSubmit: (input: FormInput) => Promise<void>
+  onSubmit: (input: MessageFormInput) => Promise<void>
 }
 
-type FormInput = {
+export type MessageFormInput = {
   message: string
   asset: string
 }
@@ -19,14 +19,14 @@ const SendMessage: React.FC<P> = ({ onSubmit }) => {
     handleSubmit,
     reset,
     formState: { isValid },
-  } = useForm<FormInput>({
+  } = useForm<MessageFormInput>({
     mode: 'onChange',
     defaultValues: {
       message: '',
       asset: '',
     },
   })
-  const submit = async (input: FormInput) => {
+  const submit = async (input: MessageFormInput) => {
     reset({ message: '' })
     await onSubmit(input)
   }
