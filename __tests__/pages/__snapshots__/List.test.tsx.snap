@@ -293,7 +293,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
             letter-spacing="0"
             size="11"
           >
-            Saturday
+            Sunday
           </p>
         </div>
       </div>
@@ -341,7 +341,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
             letter-spacing="0"
             size="11"
           >
-            Friday
+            Saturday
           </p>
         </div>
       </div>
@@ -389,7 +389,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
             letter-spacing="0"
             size="11"
           >
-            Thursday
+            Friday
           </p>
         </div>
       </div>
@@ -437,7 +437,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
             letter-spacing="0"
             size="11"
           >
-            Wednesday
+            Thursday
           </p>
         </div>
       </div>
@@ -485,7 +485,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
             letter-spacing="0"
             size="11"
           >
-            Tuesday
+            Wednesday
           </p>
         </div>
       </div>

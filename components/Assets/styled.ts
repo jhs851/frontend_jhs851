@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   position: absolute;
   left: 0;
   right: 0;
@@ -13,7 +14,7 @@ export const Wrapper = styled.div`
   padding: 11px;
 `
 
-export const Asset = styled.button`
+export const Asset = styled(motion.div)`
   height: 46px;
   border-radius: 5px;
   overflow: hidden;

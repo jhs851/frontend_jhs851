@@ -4,14 +4,14 @@ import { HiOutlinePaperAirplane } from 'react-icons/hi'
 import { flexCenter } from 'styles/flex'
 import { motion } from 'framer-motion'
 
-export const MessageContainer = styled(motion.article)<{ me: boolean }>`
+export const MessageContainer = styled.article<{ me: boolean }>`
   margin-top: 10px;
   display: flex;
   justify-content: ${({ me }) => (me ? 'flex-end' : 'flex-start')};
   align-items: flex-end;
 `
 
-export const StyledMessage = styled.div<{ me: boolean }>`
+export const StyledMessage = styled(motion.div)<{ me: boolean }>`
   padding: 12px;
   border-radius: 12px;
   box-shadow: 0 2px 4px 0 ${({ theme }) => theme.black10};
@@ -48,7 +48,7 @@ export const TimeText = styled(Text)<{ me: boolean }>`
   order: ${({ me }) => (me ? 0 : 1)};
 `
 
-export const AssetContainer = styled.div``
+export const AssetContainer = styled(motion.div)``
 
 export const AssetWrapper = styled.div`
   position: relative;
@@ -73,6 +73,7 @@ export const CancelButton = styled.button`
   margin-left: -20px;
   z-index: 1030;
   cursor: pointer;
+  transform: scale(1.2);
   ${flexCenter};
 `
 

@@ -1,6 +1,6 @@
 import { MotionProps } from 'framer-motion/types/motion/types'
 
-const useContainerVariants = (): MotionProps => ({
+const useMessageVariants = (): MotionProps => ({
   initial: { opacity: 0, x: 30 },
   animate: {
     opacity: 1,
@@ -10,4 +10,4 @@ const useContainerVariants = (): MotionProps => ({
   transition: { type: 'linear' },
 })
 
-export default useContainerVariants
+export default useMessageVariants
