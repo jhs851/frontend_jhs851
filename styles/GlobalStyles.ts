@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import fonts from 'styles/fonts'
+import 'swiper/css'
 
 const GlobalStyles = createGlobalStyle`
   ${fonts}
