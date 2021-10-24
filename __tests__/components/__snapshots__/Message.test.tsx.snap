@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message 컴포넌트 렌더링이 올바르게 된다 1`] = `
+.c1 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c4 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c0 {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 {
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 0;
+  word-break: break-word;
+}
+
+.c2 {
+  margin: 0 4px;
+  opacity: 0.4;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+<div>
+  <article
+    class="c0"
+  >
+    <p
+      class="c1 c2"
+      letter-spacing="0"
+      size="12"
+    >
+      00:00
+    </p>
+    <div
+      class="c3"
+    >
+      <p
+        class="c4"
+        color="charcoalGrey2"
+        size="14"
+      >
+        출근했니?
+      </p>
+    </div>
+  </article>
+</div>
+`;
