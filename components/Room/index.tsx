@@ -28,7 +28,7 @@ const Room: React.FC<P> = ({
 
   return (
     <Link href={`/room/${id}`} passHref>
-      <StyledRoom>
+      <StyledRoom data-testid="room-component">
         <Avatar src={user.avatar} alt={local_name} width={56} height={56} />
 
         <Container>
