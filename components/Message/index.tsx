@@ -20,7 +20,8 @@ import Image from 'components/Image'
 import API from 'utils/API'
 import { MdRefresh, MdClose } from 'react-icons/md'
 import { isVirtualMessage } from 'utils/helpers'
-import useContainerVariants from 'components/Message/hooks/useContainerVariants'
+import useMessageVariants from './hooks/useMessageVariants'
+import useAssetContainerVariants from './hooks/useAssetContainerVariants'
 
 type P = (RMessage | VMessage) & {
   isLast: boolean
@@ -31,7 +32,8 @@ type P = (RMessage | VMessage) & {
 const Message: React.FC<P> = props => {
   const { user_id, message, isLast, asset, time } = props
   const { colors } = useTheme()
-  const containerVariants = useContainerVariants()
+  const messageVariants = useMessageVariants()
+  const assetContainerVariants = useAssetContainerVariants()
   const [loading, setLoading] = useState<boolean>(isVirtualMessage(props))
   const [failed, setFailed] = useState<boolean>(false)
   const [width, setWidth] = useState<number>(0)
@@ -61,7 +63,7 @@ const Message: React.FC<P> = props => {
   }, [props, store])
 
   return (
-    <MessageContainer me={me} {...containerVariants}>
+    <MessageContainer me={me}>
       {!!message && loading && <LoadingIcon color={colors.coolGrey} />}
 
       {failed ? (
@@ -83,7 +85,7 @@ const Message: React.FC<P> = props => {
       )}
 
       {message ? (
-        <StyledMessage me={me}>
+        <StyledMessage me={me} {...messageVariants}>
           {message
             .split('\n')
             .filter(value => value)
@@ -100,7 +102,11 @@ const Message: React.FC<P> = props => {
         </StyledMessage>
       ) : (
         !!asset && (
-          <AssetContainer>
+          <AssetContainer
+            style={{ originX: 1, originY: 0, scale: 0.8 }}
+            animate={loading ? 'loading' : 'loaded'}
+            variants={assetContainerVariants}
+          >
             <AssetWrapper>
               {loading && (
                 <CancelButton onClick={onCancel}>
