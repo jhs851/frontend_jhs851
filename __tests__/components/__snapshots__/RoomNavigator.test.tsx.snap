@@ -104,7 +104,7 @@ exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
       </button>
     </div>
     <div
-      style="opacity: 0; transform: translateX(30px) translateZ(0);"
+      style="opacity: 0.4; transform: translateX(10px) translateZ(0);"
     >
       <p
         class="c2"

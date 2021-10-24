@@ -14,8 +14,8 @@ import Text from 'components/Text'
 import Link from 'next/link'
 import useCreatedAt from './hooks/useCreatedAt'
 import Image from 'components/Image'
-import useAvatarVariants from 'components/Room/hooks/useAvatarVariants'
-import useContainerVariants from 'components/Room/hooks/useContainerVariants'
+import useAvatarMotionProps from './hooks/useAvatarMotionProps'
+import useContainerMotionProps from './hooks/useContainerMotionProps'
 
 type P = RRoom
 
@@ -28,17 +28,17 @@ const Room: React.FC<P> = ({
 }) => {
   const hasLastMessage = !!last_message
   const createdTimes = useCreatedAt(last_message?.created_at)
-  const avatarVariants = useAvatarVariants()
-  const containerVariants = useContainerVariants()
+  const avatarMotionProps = useAvatarMotionProps()
+  const containerMotionProps = useContainerMotionProps()
 
   return (
     <Link href={`/room/${id}`} passHref>
       <StyledRoom data-testid="room-component">
-        <MotionAvatar {...avatarVariants}>
+        <MotionAvatar {...avatarMotionProps}>
           <Image src={user.avatar} alt={local_name} width={56} height={56} />
         </MotionAvatar>
 
-        <MotionContainer {...containerVariants}>
+        <MotionContainer {...containerMotionProps}>
           <Body>
             <Text size={16} weight={700} letterSpacing={-0.2}>
               {local_name}
