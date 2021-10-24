@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const IconsContainer = styled.div`
+export const IconsContainer = styled(motion.div)`
   display: flex;
   flex-direction: row;
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Image from 'components/Image'
 import Text from 'components/Text'
 import { flexCenter } from 'styles/flex'
+import { motion } from 'framer-motion'
 
 export const StyledRoom = styled.a`
   height: 74px;
@@ -11,14 +11,14 @@ export const StyledRoom = styled.a`
   align-items: center;
 `
 
-export const Avatar = styled(Image)`
+export const MotionAvatar = styled(motion.div)`
   flex: 0 0 56px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
 `
 
-export const Container = styled.div`
+export const MotionContainer = styled(motion.div)`
   display: flex;
   flex: 1;
   overflow: hidden;

@@ -4,6 +4,10 @@ import Image from 'components/Image'
 import { IconsContainer, UploadIcon } from './styled'
 import Navigator from 'components/Navigator'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
+import MotionBackSVG from 'components/MotionBackSVG'
+import useHeaderLeftVariants from './hooks/useHeaderLeftVariants'
+import useHeaderRightVariants from './hooks/useHeaderLeftVariants'
 
 type P = {
   roomName: string
@@ -14,21 +18,25 @@ const RoomNavigator: React.FC<P> = ({ roomName, onToggleAssets }) => {
   const router = useRouter()
   const goBack = () => router.back()
   const onSearch = () => null
+  const headerLeftVariants = useHeaderLeftVariants()
+  const headerRightVariants = useHeaderRightVariants()
 
   return (
     <Navigator
       title={
-        <Text size={17} weight={700} letterSpacing={-0.12} color="white">
-          {roomName}
-        </Text>
+        <motion.div {...headerLeftVariants}>
+          <Text size={17} weight={700} letterSpacing={-0.12} color="white">
+            {roomName}
+          </Text>
+        </motion.div>
       }
       headerLeft={
         <button data-testid="back-button" onClick={goBack}>
-          <Image src="/icons/back.svg" width={24} height={24} alt="뒤로" />
+          <MotionBackSVG />
         </button>
       }
       headerRight={
-        <IconsContainer>
+        <IconsContainer {...headerRightVariants}>
           <UploadIcon data-testid="upload-button" onClick={onToggleAssets}>
             <Image
               src="/icons/upload.svg"

@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next'
 import { RelatedRoom as RRoom } from 'types'
 import { fetch } from 'components/ListPage/fetch'
 import { NextPageWithLayout } from 'pages/_app'
-import { getLayout } from 'components/ListPage/getLayout'
+import { GetLayout } from 'components/ListPage/GetLayout'
 
 type P = {
   rooms: RRoom[]
@@ -12,7 +12,7 @@ type P = {
 
 const List: NextPageWithLayout<P> = props => <ListPage {...props} />
 
-List.getLayout = getLayout
+List.getLayout = GetLayout
 
 export const getStaticProps: GetStaticProps = fetch
 

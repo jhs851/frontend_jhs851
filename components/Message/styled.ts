@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import Text from 'components/Text'
 import { HiOutlinePaperAirplane } from 'react-icons/hi'
 import { flexCenter } from 'styles/flex'
+import { motion } from 'framer-motion'
 
-export const MessageContainer = styled.article<{ me: boolean }>`
+export const MessageContainer = styled(motion.article)<{ me: boolean }>`
   margin-top: 10px;
   display: flex;
   justify-content: ${({ me }) => (me ? 'flex-end' : 'flex-start')};
