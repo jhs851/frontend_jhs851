@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
+.c0 {
+  height: 44px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c3 {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c2 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <p
+        class="c2"
+        size="14"
+      >
+        왼쪽
+      </p>
+    </div>
+    <p
+      class="c2"
+      size="14"
+    >
+      제목
+    </p>
+    <div
+      class="c3"
+    >
+      <p
+        class="c2"
+        size="14"
+      >
+        오른쪽
+      </p>
+    </div>
+  </header>
+</div>
+`;
