@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   html, body {
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.background};
     min-height: 100vh;
   }
   
