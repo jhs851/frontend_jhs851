@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
-.c3 {
+.c2 {
   font-family: AppleSDGothicNeo,sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -11,14 +11,14 @@ exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
   letter-spacing: -0.12px;
 }
 
-.c2 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,7 +28,7 @@ exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
   flex-direction: row;
 }
 
-.c6 {
+.c5 {
   margin-right: 16px;
 }
 
@@ -58,7 +58,7 @@ exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
   transform: translateY(-50%);
 }
 
-.c4 {
+.c3 {
   position: absolute;
   right: 12px;
   top: 50%;
@@ -77,36 +77,62 @@ exports[`RoomNavigator 컴포넌트 렌더링이 올바르게 된다 1`] = `
       <button
         data-testid="back-button"
       >
-        <div
-          class="c2"
-        />
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <line
+            stroke="#fff"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="16.2"
+            x2="7.7"
+            y1="19.8"
+            y2="11.3"
+          />
+          <line
+            stroke="#fff"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="16.3"
+            x2="7.7"
+            y1="4.2"
+            y2="12.6"
+          />
+        </svg>
       </button>
     </div>
-    <p
-      class="c3"
-      color="white"
-      letter-spacing="-0.12"
-      size="17"
-    >
-      채팅방
-    </p>
     <div
-      class="c4"
+      style="opacity: 0; transform: translateX(30px) translateZ(0);"
+    >
+      <p
+        class="c2"
+        color="white"
+        letter-spacing="-0.12"
+        size="17"
+      >
+        채팅방
+      </p>
+    </div>
+    <div
+      class="c3"
     >
       <div
-        class="c5"
+        class="c4"
+        style="opacity: 0; transform: translateX(30px) translateZ(0);"
       >
         <button
-          class="c6"
+          class="c5"
           data-testid="upload-button"
         >
           <div
-            class="c2"
+            class="c6"
           />
         </button>
         <button>
           <div
-            class="c2"
+            class="c6"
           />
         </button>
       </div>

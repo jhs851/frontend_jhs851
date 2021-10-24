@@ -20,6 +20,7 @@ import Image from 'components/Image'
 import API from 'utils/API'
 import { MdRefresh, MdClose } from 'react-icons/md'
 import { isVirtualMessage } from 'utils/helpers'
+import useContainerVariants from 'components/Message/hooks/useContainerVariants'
 
 type P = (RMessage | VMessage) & {
   isLast: boolean
@@ -30,6 +31,7 @@ type P = (RMessage | VMessage) & {
 const Message: React.FC<P> = props => {
   const { user_id, message, isLast, asset, time } = props
   const { colors } = useTheme()
+  const containerVariants = useContainerVariants()
   const [loading, setLoading] = useState<boolean>(isVirtualMessage(props))
   const [failed, setFailed] = useState<boolean>(false)
   const [width, setWidth] = useState<number>(0)
@@ -59,7 +61,7 @@ const Message: React.FC<P> = props => {
   }, [props, store])
 
   return (
-    <MessageContainer me={me}>
+    <MessageContainer me={me} {...containerVariants}>
       {!!message && loading && <LoadingIcon color={colors.coolGrey} />}
 
       {failed ? (
