@@ -19,6 +19,7 @@ import { useTheme } from 'contexts/ThemeProvider'
 import Image from 'components/Image'
 import API from 'utils/API'
 import { MdRefresh, MdClose } from 'react-icons/md'
+import { isVirtualMessage } from 'utils/helpers'
 
 type P = (RMessage | VMessage) & {
   isLast: boolean
@@ -29,9 +30,6 @@ type P = (RMessage | VMessage) & {
 const Message: React.FC<P> = props => {
   const { user_id, message, isLast, asset, time } = props
   const { colors } = useTheme()
-  const isVirtualMessage = (
-    message: RMessage | VMessage,
-  ): message is VMessage => (message as VMessage).virtual_id !== undefined
   const [loading, setLoading] = useState<boolean>(isVirtualMessage(props))
   const [failed, setFailed] = useState<boolean>(false)
   const [width, setWidth] = useState<number>(0)
