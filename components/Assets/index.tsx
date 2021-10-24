@@ -8,7 +8,7 @@ export type HTMLDivAssetsElement =
   | (HTMLDivElement & {
       onToggle: () => void
     })
-  | undefined
+  | { onToggle: () => void }
 
 type P = {
   assets: IAsset[]
@@ -30,14 +30,14 @@ const Assets: React.ForwardRefRenderFunction<HTMLDivAssetsElement, P> = (
   }
 
   React.useImperativeHandle(ref, () => {
-    if (containerRef.current) {
-      return {
-        ...containerRef.current,
-        onToggle,
-      }
-    }
-
-    return undefined
+    return containerRef.current
+      ? {
+          ...containerRef.current,
+          onToggle,
+        }
+      : {
+          onToggle,
+        }
   })
 
   if (!visible) {
