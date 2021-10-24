@@ -6,8 +6,8 @@ import Navigator from 'components/Navigator'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import MotionBackSVG from 'components/MotionBackSVG'
-import useHeaderLeftVariants from './hooks/useHeaderLeftVariants'
-import useHeaderRightVariants from './hooks/useHeaderLeftVariants'
+import useHeaderTitleMotionProps from './hooks/useHeaderTitleMotionProps'
+import useHeaderRightMotionProps from './hooks/useHeaderRightMotionProps'
 
 type P = {
   roomName: string
@@ -18,13 +18,13 @@ const RoomNavigator: React.FC<P> = ({ roomName, onToggleAssets }) => {
   const router = useRouter()
   const goBack = () => router.back()
   const onSearch = () => null
-  const headerLeftVariants = useHeaderLeftVariants()
-  const headerRightVariants = useHeaderRightVariants()
+  const headerTitleMotionProps = useHeaderTitleMotionProps()
+  const headerRightMotionProps = useHeaderRightMotionProps()
 
   return (
     <Navigator
       title={
-        <motion.div {...headerLeftVariants}>
+        <motion.div {...headerTitleMotionProps}>
           <Text size={17} weight={700} letterSpacing={-0.12} color="white">
             {roomName}
           </Text>
@@ -36,7 +36,7 @@ const RoomNavigator: React.FC<P> = ({ roomName, onToggleAssets }) => {
         </button>
       }
       headerRight={
-        <IconsContainer {...headerRightVariants}>
+        <IconsContainer {...headerRightMotionProps}>
           <UploadIcon data-testid="upload-button" onClick={onToggleAssets}>
             <Image
               src="/icons/upload.svg"

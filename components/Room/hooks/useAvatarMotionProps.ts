@@ -1,6 +1,6 @@
 import { MotionProps } from 'framer-motion/types/motion/types'
 
-const useAvatarVariants = (): MotionProps => ({
+const useAvatarMotionProps = (): MotionProps => ({
   initial: { opacity: 0, x: -30 },
   animate: {
     opacity: 1,
@@ -15,4 +15,4 @@ const useAvatarVariants = (): MotionProps => ({
   transition: { type: 'linear' },
 })
 
-export default useAvatarVariants
+export default useAvatarMotionProps

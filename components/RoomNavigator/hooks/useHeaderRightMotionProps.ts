@@ -1,6 +1,6 @@
 import { MotionProps } from 'framer-motion/types/motion/types'
 
-const useHeaderRightVariants = (): MotionProps => ({
+const useHeaderRightMotionProps = (): MotionProps => ({
   initial: { opacity: 0, x: 30 },
   animate: {
     opacity: 1,
@@ -15,4 +15,4 @@ const useHeaderRightVariants = (): MotionProps => ({
   transition: { type: 'easeInOut' },
 })
 
-export default useHeaderRightVariants
+export default useHeaderRightMotionProps

@@ -20,7 +20,7 @@ import Image from 'components/Image'
 import API from 'utils/API'
 import { MdRefresh, MdClose } from 'react-icons/md'
 import { isVirtualMessage } from 'utils/helpers'
-import useMessageVariants from './hooks/useMessageVariants'
+import useMessageMotionProps from './hooks/useMessageMotionProps'
 import useAssetContainerVariants from './hooks/useAssetContainerVariants'
 
 type P = (RMessage | VMessage) & {
@@ -32,7 +32,7 @@ type P = (RMessage | VMessage) & {
 const Message: React.FC<P> = props => {
   const { user_id, message, isLast, asset, time } = props
   const { colors } = useTheme()
-  const messageVariants = useMessageVariants()
+  const messageMotionProps = useMessageMotionProps()
   const assetContainerVariants = useAssetContainerVariants()
   const [loading, setLoading] = useState<boolean>(isVirtualMessage(props))
   const [failed, setFailed] = useState<boolean>(false)
@@ -85,7 +85,7 @@ const Message: React.FC<P> = props => {
       )}
 
       {message ? (
-        <StyledMessage me={me} {...messageVariants}>
+        <StyledMessage me={me} {...messageMotionProps}>
           {message
             .split('\n')
             .filter(value => value)
