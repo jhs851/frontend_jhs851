@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home 페이지 렌더링이 올바르게 된다 1`] = `
+.c1 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c2 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c3 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c5 {
+  font-family: AppleSDGothicNeo,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.1px;
+  -moz-letter-spacing: -0.1px;
+  -ms-letter-spacing: -0.1px;
+  letter-spacing: -0.1px;
+}
+
+.c0 {
+  height: 100vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  width: 110px;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <p
+      class="c1"
+      size="40"
+    >
+      안녕하세요!
+    </p>
+    <p
+      class="c2"
+      size="22"
+    >
+      프론트엔드 개발자 
+      <b>
+        정형석
+      </b>
+      입니다!
+    </p>
+    <p
+      class="c3"
+      size="20"
+    >
+      잘 부탁드립니다 😊😊😊
+    </p>
+    <a
+      class="c4"
+      href="/list"
+    >
+      <p
+        class="c5"
+        color="white"
+        size="14"
+      >
+        채팅
+      </p>
+    </a>
+  </div>
+</div>
+`;
