@@ -24,6 +24,7 @@ exports[`채팅 리스트 페이지 렌더링이 올바르게 된다 1`] = `
   -ms-letter-spacing: -0.1px;
   letter-spacing: -0.1px;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-overflow: ellipsis '..';
   white-space: nowrap;
 }

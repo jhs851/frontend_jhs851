@@ -18,6 +18,7 @@ export const StyledText = styled.p<{
     ellipsis &&
     css`
       overflow: hidden;
+      text-overflow: ellipsis;
       text-overflow: ellipsis '..';
       white-space: nowrap;
     `}
